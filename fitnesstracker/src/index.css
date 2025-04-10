@@ -11,3 +11,125 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #d9eafc);
+  min-height: 100vh;
+  padding: 2rem;
+  color: #333;
+}
+
+/* App container */
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.App h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 2rem;
+}
+
+/* General form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+input,
+select,
+button {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Button style */
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Goal list */
+.goal {
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  border-left: 5px solid #007bff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.goal h3 {
+  margin-bottom: 0.5rem;
+}
+
+.goal small {
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #555;
+}
+
+.goal button {
+  align-self: flex-start;
+  background-color: #dc3545;
+}
+
+.goal button:hover {
+  background-color: #c82333;
+}
+
+/* Progress bar */
+progress {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #eee;
+}
+
+progress::-webkit-progress-value {
+  background-color: #28a745;
+}
+
+/* Summary styles */
+.summary {
+  background-color: #f1f9f5;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #cce5cc;
+  margin-top: 2rem;
+}
+
+.summary h2 {
+  color: #28a745;
+  margin-bottom: 1rem;
+}
